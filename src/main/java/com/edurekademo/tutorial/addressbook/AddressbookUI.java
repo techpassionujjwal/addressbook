@@ -23,7 +23,7 @@ import com.vaadin.v7.ui.TextField;
  * Define the user interface shown on the Vaadin generated web page by extending the UI class.
  * By default, a new UI instance is automatically created when the page is loaded. To reuse
  * the same instance, add @PreserveOnRefresh.
- * This is my first change
+ * This is my first build
  */
 @Title("Addressbook")
 @Theme("valo")
