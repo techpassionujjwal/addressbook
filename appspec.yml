@@ -4,7 +4,7 @@ files:
    - source: target/addressbook.war
      destination: /
 permissions:
-   - object: /var/www/html
+   - object: target/addressbook.war
      pattern: "**"
      owner: apache
      group: apache
