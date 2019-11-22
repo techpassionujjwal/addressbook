@@ -3,20 +3,3 @@ os: linux
 files:
    - source: /addressbook.war
      destination: /var/lib/webapps
-permissions:
-   - object: /var/lib/webapps
-     pattern: "**"
-     owner: apache
-     group: apache
-     mode: 755
-     type:
-       - file
-hooks:
-   BeforeInstall:
-    - location: scripts/installapache.sh
-      runas: root
-    - location: scripts/startapache.sh
-      runas: root
-   AfterInstall:
-    - location: scripts/restartapache.sh
-      runas: root
