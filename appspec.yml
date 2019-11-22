@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-   - source: target/addressbook.war
-     destination: /
+   - source: /addressbook.war
+     destination: /var/lib/webapps
 permissions:
-   - object: target/addressbook.war
+   - object: /var/lib/webapps
      pattern: "**"
      owner: apache
      group: apache
