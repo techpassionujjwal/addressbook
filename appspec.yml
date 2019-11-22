@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-   - source: /addressbook.war
+   - source: target/addressbook.war
      destination: /var/lib/webapps
