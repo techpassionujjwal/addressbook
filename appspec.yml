@@ -2,4 +2,4 @@ version: 0.0
 os: linux
 files:
    - source: target/addressbook.war
-     destination: /opt/tomcat/apache-tomcat-7.0.96/webapps
+     destination: /deployments
