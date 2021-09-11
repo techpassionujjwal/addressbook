@@ -1,13 +1,20 @@
 
 version: 0.2
+
 phases:
   install:
+    runtime-versions:
+      java: corretto11
+  pre_build:
     commands:
-      - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket sudip-codepipeline
-                                   --output-template-file outputSamTemplate.yaml
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn install
+  post_build:
+    commands:
+      - echo Build completed on `date`
 artifacts:
-  type: zip
   files:
-    - samTemplate.yaml
-    - outputSamTemplate.yaml
+    - target/addressbook.jar
